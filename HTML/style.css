@@ -1,0 +1,35 @@
+.navbar-transparent {
+    padding-top: 30px;
+}
+nav.navbar ul.navbar-nav a {
+    font-family: "Fira Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 45px;
+}
+#video_container {
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+#bgvid {
+	min-width: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.parallax {
+    height: 707px;
+    }
+    
+figure {
+    margin-top: 340px;
+    text-align: center;
+    z-index: 1000;
+}
+.container figure img {
+    position: relative;
+    z-index: 9000;
+}
