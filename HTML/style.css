@@ -21,7 +21,6 @@ strong {
 	font-weight: 500;
 }
 .navbar-transparent {
-    padding-top: 30px;
 }
 nav.navbar ul.navbar-nav a {
     font-family: "Fira Sans",sans-serif;
@@ -49,7 +48,7 @@ nav.navbar ul.navbar-nav a {
     }
     
 figure {
-    margin-top: 340px;
+    margin-top: 290px;
     text-align: center;
     z-index: 1000;
 }
@@ -172,6 +171,8 @@ p.info {
 /* @end */
 
 /* @group contacto */
+
+
 .main.contacto {
     position: relative;
 }
@@ -192,6 +193,7 @@ p.info {
     font-family: "Fira Sans",sans-serif;
     font-size: 16px;
     margin-left: 60px;
+    line-height: 21px;
 }
 .contacto p.mail {
 	color: #d07721;
@@ -215,7 +217,7 @@ p.info {
     padding-bottom: 5px;
 }
 .contacto .tab-pane {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -224,9 +226,51 @@ p.info {
     font-family: "Fira Sans",sans-serif;
     font-size: 14px;
     margin-left: 0px;
-    
+    line-height: 19px;
 }
 .contacto .text {
 	margin: 20px 0;
 }
+.contacto ul.nav-text li {
+    width: 33%;
+}
+.nav.nav-text li:last-child {
+    text-align: right;
+    width: 30%;
+}
+.nav.nav-text li:last-child a {
+	text-align: right;
+	margin-right: 0px;
+}
+.contacto ul.nav-text li:nth-child(2) a {
+    text-align: center;
+}
+.contacto .card-background .map {
+    border-radius: 6px;
+    height: 255px;
+}
+
+/* @end */
+
+/* @group Modal reservas */
+
+label {
+    color: #d07721;
+    font-size: 16px;
+    font-weight: 300;
+}
+.modal-body {
+    padding-top: 0;
+}
+.form-control {
+    margin-bottom: 10px;
+}
+.alert-success {
+    background-color: rgba(76, 217, 100, 0.98);
+    margin-top: 160px;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
 /* @end */

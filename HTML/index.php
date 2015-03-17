@@ -71,15 +71,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<?php  
 
-      // check for a successful form post  
-      if (isset($_GET['s'])) echo "<br><div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
-
-      // check for a form error  
-      elseif (isset($_GET['e'])) echo "<br><div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
-
-?>
 
 <!-- Modal -->
    
@@ -112,20 +104,20 @@
                        </div>
 						<div class="col-md-12">
 						  <label>Cantidad de personas</label>
-						  <select name="selectbox" class="selectpicker" data-style="form-control" data-menu-style="">
+						  <select name="cant_personas" class="selectpicker" data-style="form-control" data-menu-style="">
 						     
 						         <option disabled selected> Escoger cantidad</option>
 						     
 						         <option value="1">1 </option>
-						         <option value="1">2 </option>
-						         <option value="1">3 </option>
-						         <option value="1">4 </option>
-						         <option value="1">5 </option>
-						         <option value="1">6 </option>
-						         <option value="1">7 </option>
-						         <option value="1">8 </option>
-						         <option value="1">9 </option>
-						         <option value="1">10 o +</option>
+						         <option value="2">2 </option>
+						         <option value="3">3 </option>
+						         <option value="4">4 </option>
+						         <option value="5">5 </option>
+						         <option value="6">6 </option>
+						         <option value="7">7 </option>
+						         <option value="8">8 </option>
+						         <option value="9">9 </option>
+						         <option value="10o+">10 o +</option>
 						     
 						     </select>
 						</div>
@@ -143,14 +135,14 @@
                      </form>
 
          </div>
-   
-         <div class="modal-footer">
+   <div class="modal-footer">
    
            <!--<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
    
            <button type="button" class="btn btn-info btn-simple">Save</button>-->
    
          </div>
+         
    
        </div>
    
@@ -159,6 +151,16 @@
    </div><!--fin modal-->
 
 <div class="wrapper">
+<?php  
+
+      // check for a successful form post  
+      if (isset($_GET['s'])) echo "<br><div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
+
+      // check for a form error  
+      elseif (isset($_GET['e'])) echo "<br><div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
+
+?>
+
 	    
 	    <div class="parallax">
 	       <!-- <div class="parallax-image">
@@ -393,10 +395,10 @@
 	<script src="assets/js/bootstrap-select.js"></script>
 	<script src="assets/js/bootstrap-datepicker.js"></script>
 	<script src="assets/js/chartist.min.js"></script>
-    <script src="assets/js/jquery.tagsinput.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="assets/js/jquery.tagsinput.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	
-	<script src="assets/js/get-shit-done.js"></script>
+	
 	
     <script src="assets/js/demo.js"></script>
     
@@ -407,7 +409,14 @@
             initGoogleMaps();            
         });
     </script>
-    
+   <!-- GSDK Pro functions -->
+   <script src="assets/js/get-shit-done.js"></script>
+   
+   <script type="text/javascript">
+       $().ready(function(){
+           $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
+       });       
+   </script>
     
     <!-- Add fancyBox -->
     <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -429,6 +438,6 @@
     });
     </script>
     
-        
+         
     
 </html>
