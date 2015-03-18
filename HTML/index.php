@@ -31,7 +31,6 @@
 </head>
 <body>
 <?php  
-
       // check for a successful form post  
       if (isset($_GET['s'])) echo "<div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
 
@@ -226,7 +225,62 @@
     <div class="container imagenes">
     	<div class="row">
     	
-    		<div class="col-md-3 primera">
+    	<div class="img-mobiles visible-xs hidden-md">
+    		
+    		<div class="col-sm-6 col-xs-6">
+    			
+    				<a class="fancybox" rel="gallery1" href="assets/images/img-puerta-big.jpg" >
+    					<img src="assets/images/img-puerta.jpg" alt=" "/>  
+    				</a>
+    		</div><!--fin col 6-->		
+    			<div class="col-sm-6 col-xs-6">
+    				<a class="fancybox" rel="gallery1" href="assets/images/img-corchos-big.jpg" >
+    				<img src="assets/images/img-corchos-xs.jpg" alt=" "/>  
+    				</a>
+    		
+    		</div><!--fin columna 6-->
+    		
+    		<div class="col-sm-6 col-xs-6">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-patio-big.jpg" >
+    				<img src="assets/images/img-patio-xs.jpg" alt=" "/>  
+    			</a>
+    		</div>
+    		<div class="col-sm-6 col-xs-6">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-cervezas-big.jpg" >
+    				<img src="assets/images/img-cervezas.jpg" alt=" "/>  
+    			</a>	
+    			
+    		</div>
+    		<div class="col-sm-6 col-xs-6">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-cucharones-big.jpg" >
+    				<img src="assets/images/img-cucharones-xs.jpg" alt=" "/>  
+    			</a>	
+    			
+    		</div>
+    		<div class="col-sm-6 col-xs-6">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-mesa-big.jpg" >
+    				<img src="assets/images/img-mesa-xs.jpg" alt=" "/>  
+    			</a>	
+    			
+    		</div>
+    		<div class="col-sm-6 col-xs-6">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-perchero-big.jpg" >
+    				<img src="assets/images/img-perchero-xs.jpg" alt=" "/>  
+    			</a>	
+    			
+    		</div>
+    		<div class="col-sm-6 col-xs-6">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-corchos-big.jpg" >
+    				<img src="assets/images/img-corchos-xs.jpg" alt=" "/>  
+    			</a>	
+    			
+    		</div>
+    	
+    	</div><!--fin mobiles-->
+    	<div class="clear: both;"></div>
+    	
+    	
+    		<div class="col-md-3 col-sm-3 col-xs-6 primera hidden-xs">
     			
     				<a class="fancybox" rel="gallery1" href="assets/images/img-puerta-big.jpg" >
     					<img src="assets/images/img-puerta.jpg" alt=" "/>  
@@ -238,27 +292,27 @@
     		
     		</div><!--fin columna 3-->
     		
-    		<div class="col-md-2 segunda">
+    		<div class="col-md-2 col-sm-2 col-xs-6 segunda hidden-xs">
     			<a class="fancybox" rel="gallery1" href="assets/images/img-patio-big.jpg" >
 	    			<img src="assets/images/img-patio.jpg" alt=" "/>  
 	    		</a>
     		</div><!--fin columna-->
     		
-    		<div class="col-md-7 tercera">
+    		<div class="col-md-7 col-sm-7 col-xs-12 tercera hidden-xs">
     			<div class="row">
-    				<div class="col-md-4 uno">
+    				<div class="col-md-4 col-xs-6 col-sm-4 uno">
     				<a class="fancybox" rel="gallery1" href="assets/images/img-cervezas-big.jpg" >
     					<img src="assets/images/img-cervezas.jpg" alt=" "/>  
     				</a>	
     				</div><!--fin col md 4-->
     				
-    				<div class="col-md-4 dos">
+    				<div class="col-md-4 col-sm-4 col-xs-6 dos hidden-xs">
     					<a class="fancybox" rel="gallery1" href="assets/images/img-cucharones-big.jpg" >
     						<img src="assets/images/img-cucharones.jpg" alt=" "/>  
     					</a>
     				</div><!--fin col md 4-->
     				
-    				<div class="col-md-4 tres">
+    				<div class="col-md-4 col-sm-4 col-xs-12 tres hidden-xs">
     					<a class="fancybox" rel="gallery1" href="assets/images/img-mesa-big.jpg" >
     						<img src="assets/images/img-mesa.jpg" alt=" "/>  
     						</a>
@@ -268,13 +322,13 @@
     			<div class="row">
     		
     				
-    				<div class="col-md-6 cinco">
+    				<div class="col-md-6 col-sm-6 col-xs-6 cinco hidden-xs">
     					<a class="fancybox" rel="gallery1" href="assets/images/img-perchero-big.jpg" title="">
     					 <img src="assets/images/img-perchero.jpg" alt=" "/>  
     					 </a>
     				</div><!--fin col md 4-->
     				
-    				<div class="col-md-6 seis">
+    				<div class="col-md-6 col-sm-6 col-xs-6 seis hidden-xs">
     					<a class="fancybox" rel="gallery1" href="assets/images/img-corchos-big.jpg" title="">
     						<img src="assets/images/img-corchos.jpg" alt=" "/> 
     					</a>	 

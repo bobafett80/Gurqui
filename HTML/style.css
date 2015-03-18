@@ -146,16 +146,11 @@ p.info {
 .imagenes div {
 	padding: 0px;
 }
-.imagenes .col-md-3 {
-    width: 25.6%;
-}
+
 .imagenes .col-md-3 img {
     width: 100%
 }
-.imagenes .col-md-2 {
-    margin: 0 2px;
-    width: 17.86%;
-}
+
 .imagenes .col-md-2 img {
     width: 100%;
 }
@@ -166,25 +161,7 @@ p.info {
 .imagenes img {
     margin-bottom: 2px;
 }
-.imagenes .col-md-7 {
-	width: 55.333%;
-}
-.imagenes .col-md-7 .col-md-4.uno {
-    width: 32.7%;
-}
-.imagenes .col-md-7 .col-md-4.dos {
-    width: 34.3%;
-}
-.imagenes .col-md-7 .col-md-4.tres {
-    overflow: hidden;
-    width: 31.8%;
-}
-.imagenes .col-md-7 .col-md-6.cinco {
-    width: 52.8%;
-}
-.imagenes .col-md-7 .col-md-6.seis {
-    width: 46%;
-}
+
 /* @end */
 
 
@@ -365,6 +342,33 @@ label {
 
 /* @group Media queries */
 
+@media (max-width:320px) {
+	
+	.imagenes .col-xs-6 img {
+	width: 100%;
+}
+	.imagenes .col-xs-6.segunda {
+    height: 264px;
+    overflow: hidden;
+}
+.imagenes .col-xs-6.primera {
+    margin-right: 2px;
+    width: 49.2%;
+}
+.imagenes .col-xs-6.uno {
+   height: 205px;
+    margin-right: 2px;
+    overflow: hidden;
+    
+}
+.imagenes .col-xs-6.dos {
+    width: 49.3%;
+}
+.imagenes .col-xs-6.seis {
+    height: 98px;
+    overflow: hidden;
+}
+}
 @media (max-width: 360px) {
 	figure { display: none;}
 	a.navbar-brand { width: 130px; }
@@ -384,16 +388,16 @@ label {
 	p.nombre { margin-top: 15px; margin-bottom: 0px; }
 	p.info {  margin-bottom: 60px; }
 	nav.navbar a.navbar-brand { margin-top: 10px; }
-	
-}
-@media (max-width: 768px){
-	.navbar-brand { background-image: url("assets/images/logo-gurqui-mobile.png"); width: 130px;}
-    .collapse .nav.navbar-nav {
+	.collapse .nav.navbar-nav {
     background-color: #e58e39;
 }
 body > .navbar-collapse .nav > li {
     border-bottom: 1px solid #b36c28;
 }
+}
+@media (max-width: 768px){
+	.navbar-brand { background-image: url("assets/images/logo-gurqui-mobile.png"); width: 130px;}
+
 }
 @media (min-width: 800px) {
 	.navbar.navbar-ct-azure.navbar-fixed-top { height: 35px; }
@@ -412,6 +416,36 @@ body > .navbar-collapse .nav > li {
 @media (min-width: 768px) and (max-width: 980px) {
 	 .marco-carta { height: 300px;}
     }    
-    
+@media (min-width: 1024px) {
+	.imagenes .col-md-3 {
+    width: 25.6%;
+}
+
+.imagenes .col-md-2 {
+    margin: 0 2px;
+    width: 17.86%;
+}
+
+.imagenes .col-md-7 {
+	width: 55.333%;
+}
+.imagenes .col-md-7 .col-md-4.uno {
+    width: 32.7%;
+}
+.imagenes .col-md-7 .col-md-4.dos {
+    width: 34.3%;
+}
+.imagenes .col-md-7 .col-md-4.tres {
+    overflow: hidden;
+    width: 31.8%;
+}
+.imagenes .col-md-7 .col-md-6.cinco {
+    width: 52.8%;
+}
+.imagenes .col-md-7 .col-md-6.seis {
+    width: 46%;
+}
+
+}    
     
 /* @end */    
