@@ -21,13 +21,20 @@ strong {
 	font-weight: 500;
 }
 .navbar-transparent {
-	padding-top: 0px;
+	padding-top: 20px;
 }
 nav.navbar ul.navbar-nav a {
     font-family: "Fira Sans",sans-serif;
     font-size: 16px;
     font-weight: 300;
-    padding: 10px 45px 10px;
+    padding: 3px 45px 10px;
+}
+.navbar-transparent .navbar-brand {
+    color: #ffffff;
+    opacity: 0;
+}
+nav.navbar ul.navbar-nav .navbar-brand {
+	opacity: 1 !important;
 }
 /*.navbar .navbar-nav > li > a {
     margin: 5px 3px 15px;
@@ -38,7 +45,7 @@ nav.navbar ul.navbar-nav a {
     background-repeat: no-repeat;
     background-size: 95% auto;
     text-indent: -9999px;
-    width: 140px;
+    width: 276px;
     padding-top: 0 !important;
     }
  
@@ -84,7 +91,9 @@ figure {
 }
 
 /* @group Gurqui */
-
+#gurqui {
+    padding-top: 40px;
+}
 .main {
     background-color: #ffffff;
     
@@ -105,7 +114,7 @@ figure {
 	text-align: center;
 }
  p.intro {
-    margin: 0 50px 120px;
+    margin: 0 50px 80px;
     text-align: center;
     line-height: 24px;
 }
@@ -130,7 +139,7 @@ p.info {
 /* @group imagenes */
 
 .imagenes {
-	margin-top: 140px;
+	margin-top: 80px;
 }
 .imagenes div {
 	padding: 0px;
@@ -181,7 +190,7 @@ p.info {
 
 
 .carta {
-    padding-top: 190px;
+    padding-top: 70px;
     border: none;
 }
 .bg-carta {

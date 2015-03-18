@@ -182,12 +182,12 @@
 		     
   		</div><!--fin parallax-->
     
-    <div class="main">
+    <div  id="gurqui" class="main">
         <div class="section">
         
-        <div id="gurqui" class="container">
+        <div class="container">
         
-        	<h2>Gurqui</h2>
+        	<!--<h2>Gurqui</h2>-->
         	<p class="intro">Imagineu-vos una barreja entre un sopar de pel·lícula de Woody Allen i un paladar cubà. El Gurqui es troba en un d'aquells entresòls tan característics de l'Eixample, i està decorat de forma imaginativa com si fos una casa decorada amb mobles d'antiquari. Un local íntim i especial que només obre a les nits i convida a la tertúlia distesa mentre es gaudeix de la seva cuina, de les millors que es poden trobar a Barcelona.</p>
         	
         	<div class="row">
@@ -433,6 +433,15 @@
   			openEffect	: 'none',
   			closeEffect	: 'none'
   		});
+  	});
+  	</script>
+  	
+  	<script>
+  	/* smooth scrolling for nav sections */
+  	$('ul.nav li>a').click(function(){
+  	  var link = $(this).attr('href');
+  	  var posi = $(link).offset().top;
+  	  $('body,html').animate({scrollTop:posi},700);
   	});
   	</script>
   
