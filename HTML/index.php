@@ -26,6 +26,17 @@
     
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     
+    <?php  
+    
+          // check for a successful form post  
+          if (isset($_GET['s'])) echo "<br><div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
+    
+          // check for a form error  
+          elseif (isset($_GET['e'])) echo "<br><div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
+    
+    ?>
+    
+    
 </head>
 <body>
 <nav class="navbar navbar-ct-azure navbar-transparent navbar-fixed-top" role="navigation">
@@ -38,7 +49,7 @@
         <span class="icon-bar bar2"></span>
         <span class="icon-bar bar3"></span>
       </button>
-      <!--<a class="navbar-brand" href="#">El Gurqui</a>-->
+       <a class="navbar-brand" href="#">El Gurqui</a> 
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,17 +57,17 @@
      
       <ul class="nav navbar-nav navbar-right">
             <li class="active">
-                <a href="#">
+                <a href="#gurqui">
                      El gurqui
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#menu">
                      Menú
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#como-llegar">
                      Cómo llegar
                 </a>
             </li>
@@ -151,32 +162,24 @@
    </div><!--fin modal-->
 
 <div class="wrapper">
-<?php  
-
-      // check for a successful form post  
-      if (isset($_GET['s'])) echo "<br><div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
-
-      // check for a form error  
-      elseif (isset($_GET['e'])) echo "<br><div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
-
-?>
 
 	    
 	    <div class="parallax">
-	       <!-- <div class="parallax-image">
+	       <div class="container">
+	            <figure><img src="assets/images/logo-gurqui.png" width="417" alt="Gurqui" /></figure>
+	       </div><!--fin container--> 
+	       <div class="parallax-image">
 	            <img src="assets/images/bg-poster.jpg">
-	        </div>-->
-			<div id="video_container">
+	        </div>
+			<!--<div id="video_container">
 		       <video preload autoplay loop id="bgvid" poster="assets/images/bg-poster.jpg">
 		         <source src="assets/video/yc_skyline.mp4" type="video/mp4">
 		         <source src="assets/video/yc_skyline.webm" type="video/webm">
 		         <source src="assets/video/yc_skyline.m4v" type="video/m4v">
 		           Tu navegador no sopora el tag de video
 		       </video>
-		     </div>  
-		     <div class="container">
-		          <figure><img src="assets/images/logo-gurqui.png" width="417" alt="Gurqui" /></figure>
-		     </div><!--fin container--> 
+		     </div>  -->
+		     
   		</div><!--fin parallax-->
     
     <div class="main">
@@ -188,26 +191,26 @@
         	<p class="intro">Imagineu-vos una barreja entre un sopar de pel·lícula de Woody Allen i un paladar cubà. El Gurqui es troba en un d'aquells entresòls tan característics de l'Eixample, i està decorat de forma imaginativa com si fos una casa decorada amb mobles d'antiquari. Un local íntim i especial que només obre a les nits i convida a la tertúlia distesa mentre es gaudeix de la seva cuina, de les millors que es poden trobar a Barcelona.</p>
         	
         	<div class="row">
-        		<div class="col-md-1">
+        		<div class="col-md-1 col-sm-1">
         		</div><!--fin col md 2-->
-        		<div class="col-md-2">
+        		<div class="col-md-2 col-sm-1">
         		</div><!--fin col md 2-->
         		
-        		<div class="col-md-2">
+        		<div class="col-md-2 col-sm-3 col-xs-12 perfil">
 	        		<img src="assets/images/xesca.jpg" alt="Xesca, Sommelier" class="img-circle"/>  
 	        		<p class="nombre">Xesca</p> 
 	        		<p class="info">Sommelier</p>
         		</div><!--fin col md 2-->
-        		<div class="col-md-2">
+        		<div class="col-md-2 col-sm-2">
         		</div><!--fin col md 2-->
         		
-        		<div class="col-md-2">
+        		<div class="col-md-2 col-sm-3 col-xs-12 perfil">
 	        		<img src="assets/images/albert.jpg" alt="Albert, Chef" class="img-circle"/>  
 	        		<p class="nombre">Albert</p> 
 	        		<p class="info">Chef</p>
         		</div><!--fin col md 3-->
         		
-        		<div class="col-md-2">
+        		<div class="col-md-2 col-sm-1">
         		</div><!--fin col md 2-->
         		<div class="col-md-1">
         		</div><!--fin col md 2-->
@@ -221,40 +224,40 @@
     <div class="container imagenes">
     	<div class="row">
     	
-    		<div class="col-md-3">
+    		<div class="col-md-3 primera">
     			
-    				<a class="fancybox" rel="gallery1" href="assets/images/img-puerta-big.jpg" title="">
+    				<a class="fancybox" rel="gallery1" href="assets/images/img-puerta-big.jpg" >
     					<img src="assets/images/img-puerta.jpg" alt=" "/>  
     				</a>
     			
-    				<a class="fancybox" rel="gallery1" href="assets/images/img-corchos-big.jpg" title="">
+    				<a class="fancybox" rel="gallery1" href="assets/images/img-corchos-big.jpg" >
     				<img src="assets/images/img-corchos.jpg" alt=" "/>  
     				</a>
     		
     		</div><!--fin columna 3-->
     		
-    		<div class="col-md-2">
-    			<a class="fancybox" rel="gallery1" href="assets/images/img-patio-big.jpg" title="">
+    		<div class="col-md-2 segunda">
+    			<a class="fancybox" rel="gallery1" href="assets/images/img-patio-big.jpg" >
 	    			<img src="assets/images/img-patio.jpg" alt=" "/>  
 	    		</a>
     		</div><!--fin columna-->
     		
-    		<div class="col-md-7">
+    		<div class="col-md-7 tercera">
     			<div class="row">
-    				<div class="1era col-md-4">
-    				<a class="fancybox" rel="gallery1" href="assets/images/img-cervezas-big.jpg" title="">
+    				<div class="col-md-4 uno">
+    				<a class="fancybox" rel="gallery1" href="assets/images/img-cervezas-big.jpg" >
     					<img src="assets/images/img-cervezas.jpg" alt=" "/>  
     				</a>	
     				</div><!--fin col md 4-->
     				
-    				<div class="2da col-md-4">
-    					<a class="fancybox" rel="gallery1" href="assets/images/img-cucharones-big.jpg" title="">
+    				<div class="col-md-4 dos">
+    					<a class="fancybox" rel="gallery1" href="assets/images/img-cucharones-big.jpg" >
     						<img src="assets/images/img-cucharones.jpg" alt=" "/>  
     					</a>
     				</div><!--fin col md 4-->
     				
-    				<div class="3era col-md-4">
-    					<a class="fancybox" rel="gallery1" href="assets/images/img-mesa-big.jpg" title="">
+    				<div class="col-md-4 tres">
+    					<a class="fancybox" rel="gallery1" href="assets/images/img-mesa-big.jpg" >
     						<img src="assets/images/img-mesa.jpg" alt=" "/>  
     						</a>
     				</div><!--fin col md 4-->
@@ -263,13 +266,13 @@
     			<div class="row">
     		
     				
-    				<div class="col-md-6">
+    				<div class="col-md-6 cinco">
     					<a class="fancybox" rel="gallery1" href="assets/images/img-perchero-big.jpg" title="">
     					 <img src="assets/images/img-perchero.jpg" alt=" "/>  
     					 </a>
     				</div><!--fin col md 4-->
     				
-    				<div class="col-md-6">
+    				<div class="col-md-6 seis">
     					<a class="fancybox" rel="gallery1" href="assets/images/img-corchos-big.jpg" title="">
     						<img src="assets/images/img-corchos.jpg" alt=" "/> 
     					</a>	 
@@ -285,7 +288,7 @@
     	</div><!--fin section-->
     	</div><!--fin main-->
     	
-    	<div class="main carta">
+    	<div id="menu" class="main carta">
     	
     		<h2>La Carta</h2>
     		
@@ -293,17 +296,17 @@
     			<div class="container">
 		    		<div class="row">
 		    		
-		    			<div class="col-md-4">
+		    			<div class="col-md-4 col-sm-4 col-xs-12">
 		    				<h3>Primeros</h3>
 		    				<div class="col-md-12 marco-carta">
 		    				</div><!--fin marco-->
 		    			</div><!--fin col md 4-->
-		    			<div class="col-md-4">
+		    			<div class="col-md-4 col-sm-4 col-xs-12">
 		    				<h3>2dos</h3>
 		    				<div class="col-md-12 marco-carta">
 		    				</div><!--fin marco-->
 		    			</div><!--fin col md4-->
-		    			<div class="col-md-4">
+		    			<div class="col-md-4 col-sm-4 col-xs-12">
 		    				<h3>Vinos</h3>
 		    				<div class="col-md-12 marco-carta">
 		    				</div><!--fin marco-->
@@ -316,9 +319,9 @@
     		
     	</div><!--fin main-->
     	
-    	<div class="main contacto">
+    	<div id="como-llegar" class="main contacto">
     	
-    		<img src="assets/images/bg_contacto.jpg" class="img-responsive" alt=" "/> 
+    		<img src="assets/images/bg_contacto.jpg"  alt=" "/> 
     		
     		<div class="container">
     			<div class="col-md-6 col-md-offset-3">
@@ -381,63 +384,58 @@
     	</div><!--fin main-->
 
 </body>
-
-    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
-
-	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
-	
-	<!--  Plugins -->
-	<script src="assets/js/gsdk-checkbox.js"></script>
-	<script src="assets/js/gsdk-morphing.js"></script>
-	<script src="assets/js/gsdk-radio.js"></script>
-	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
-	<script src="assets/js/bootstrap-select.js"></script>
-	<script src="assets/js/bootstrap-datepicker.js"></script>
-	<script src="assets/js/chartist.min.js"></script>
-	<script src="assets/js/jquery.tagsinput.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	
-	
-	
-    <script src="assets/js/demo.js"></script>
-    
-    <script>
-        $().ready(function(){
-            initMorphingButtons();
-            initDemoChartist();
-            initGoogleMaps();            
-        });
-    </script>
-   <!-- GSDK Pro functions -->
-   <script src="assets/js/get-shit-done.js"></script>
-   
-   <script type="text/javascript">
-       $().ready(function(){
-           $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
-       });       
-   </script>
-    
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="assets/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="assets/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    
-    <link rel="stylesheet" href="assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>    
-    <script>
-    $(document).ready(function() {
-    	$(".fancybox").fancybox({
-    		openEffect	: 'none',
-    		closeEffect	: 'none'
-    	});
-    });
-    </script>
-    
+ 
+      <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+  	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+  
+  	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+  	
+  	<!--  Plugins -->
+  	<script src="assets/js/gsdk-checkbox.js"></script>
+  	<script src="assets/js/gsdk-morphing.js"></script>
+  	<script src="assets/js/gsdk-radio.js"></script>
+  	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
+  	<script src="assets/js/bootstrap-select.js"></script>
+  	<script src="assets/js/bootstrap-datepicker.js"></script>
+  	<script src="assets/js/chartist.min.js"></script>
+      <script src="assets/js/jquery.tagsinput.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  	
+  	 
+  	 <script src="assets/js/demo.js"></script>
+  	   
+  	   	  
+  	   
+  	
+  	  <!-- GSDK Pro functions -->
+  	  <script src="assets/js/get-shit-done.js"></script>
+  	  
+  	  <script type="text/javascript">
+  	      $().ready(function(){
+  	          $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
+  	      });       
+  	  </script> 
+  	
+  	<!-- Add fancyBox -->
+  	<link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  	
+  	<!-- Optionally add helpers - button, thumbnail and/or media -->
+  	<link rel="stylesheet" href="assets/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  	<script type="text/javascript" src="assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  	<script type="text/javascript" src="assets/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+  	
+  	<link rel="stylesheet" href="assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  	<script type="text/javascript" src="assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>    
+  	<script>
+  	$(document).ready(function() {
+  		$(".fancybox").fancybox({
+  			openEffect	: 'none',
+  			closeEffect	: 'none'
+  		});
+  	});
+  	</script>
+  
          
     
 </html>

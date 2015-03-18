@@ -21,14 +21,27 @@ strong {
 	font-weight: 500;
 }
 .navbar-transparent {
+	padding-top: 0px;
 }
 nav.navbar ul.navbar-nav a {
     font-family: "Fira Sans",sans-serif;
     font-size: 16px;
     font-weight: 300;
-    padding: 10px 45px;
+    padding: 10px 45px 10px;
 }
-
+/*.navbar .navbar-nav > li > a {
+    margin: 5px 3px 15px;
+}*/
+ .navbar-brand {
+    background-image: url("assets/images/logo-gurqui-mobile.png");
+    background-position: 10px -3px;
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    text-indent: -9999px;
+    width: 140px;
+    padding-top: 0 !important;
+    }
+ 
 #video_container {
     left: 0;
     min-width: 100%;
@@ -36,6 +49,7 @@ nav.navbar ul.navbar-nav a {
     top: 0;
     width: 100%;
     z-index: 0;
+    
 }
 
 #bgvid {
@@ -44,24 +58,36 @@ nav.navbar ul.navbar-nav a {
 	z-index: 0;
 }
 .parallax {
-    height: 699px;
+    height: 100%;
+    border-bottom: 20px solid #d07721;
+    overflow: hidden;
     }
-    
+.parallax .parallax-image {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}   
+.parallax .parallax-image img {
+    height: auto;
+    width: 100%;
+}
 figure {
     margin-top: 290px;
+    position: absolute;
     text-align: center;
-    z-index: 1000;
+    width: 95%;
+    z-index: 7000;
 }
 .container figure img {
     position: relative;
-    z-index: 9000;
 }
 
 /* @group Gurqui */
 
 .main {
     background-color: #ffffff;
-    border-top: 20px solid #d07721;
+    
 }
 #gurqui h2 {
     background-image: url("assets/images/titulo-gurqui.png");
@@ -71,11 +97,15 @@ figure {
     font-size: 45px;
     font-weight: 500;
     letter-spacing: 10px;
+    margin-bottom: 60px;
     margin-top: 10px;
     text-indent: -9999px;
 }
+.perfil{
+	text-align: center;
+}
  p.intro {
-    margin: 0 50px 160px;
+    margin: 0 50px 120px;
     text-align: center;
     line-height: 24px;
 }
@@ -112,7 +142,8 @@ p.info {
     width: 100%
 }
 .imagenes .col-md-2 {
-    width: 18.1%;
+    margin: 0 2px;
+    width: 17.86%;
 }
 .imagenes .col-md-2 img {
     width: 100%;
@@ -127,7 +158,22 @@ p.info {
 .imagenes .col-md-7 {
 	width: 55.333%;
 }
-
+.imagenes .col-md-7 .col-md-4.uno {
+    width: 32.7%;
+}
+.imagenes .col-md-7 .col-md-4.dos {
+    width: 34.3%;
+}
+.imagenes .col-md-7 .col-md-4.tres {
+    overflow: hidden;
+    width: 31.8%;
+}
+.imagenes .col-md-7 .col-md-6.cinco {
+    width: 52.8%;
+}
+.imagenes .col-md-7 .col-md-6.seis {
+    width: 46%;
+}
 /* @end */
 
 
@@ -140,7 +186,7 @@ p.info {
 }
 .bg-carta {
     background-image: url("assets/images/bg_pizarra.jpg");
-    height: 730px;
+    padding-bottom: 70px;
     width: 100%;
     margin-top: 90px;
 }
@@ -175,6 +221,7 @@ p.info {
 
 .main.contacto {
     position: relative;
+    overflow: hidden;
 }
 .main.contacto img {
     width: 100%;
@@ -274,3 +321,48 @@ label {
 }
 
 /* @end */
+
+
+/* @group Media queries */
+
+@media (max-width: 360px) {
+	figure { display: none;}
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	 .marco-carta { background-size: 100% 100%; height: 520px;}
+	  
+    }
+@media (max-width: 480px) {
+	#gurqui h2 { background-size: 100% auto; margin-bottom: 25px;}
+	.marco-carta { background-size: 100% 100%; height: 520px;}
+	
+	}
+
+@media (max-width: 640px) {
+	p.intro { margin: 0 20px 70px; }
+	p.nombre { margin-top: 15px; margin-bottom: 0px; }
+	p.info {  margin-bottom: 60px; }
+	
+}
+@media (min-width: 800px) {
+	.navbar.navbar-ct-azure.navbar-fixed-top { height: 35px; }
+	.navbar { min-height: 35px; }
+}
+@media (max-width: 800px) {
+	 figure img { width: 60%;}
+     figure { margin-top: 100px;}
+     nav.navbar ul.navbar-nav a { padding: 15px 35px; }
+      }
+
+@media (max-width: 980px) {
+	.col-md-offset-3 {
+    padding-top: 1px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+	 .marco-carta { height: 300px;
+    }    
+    
+    
+/* @end */    
