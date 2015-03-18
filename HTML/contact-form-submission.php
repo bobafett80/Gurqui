@@ -16,14 +16,13 @@ if (empty ($name))
     $error = "No pudimos enviar tu mensaje. Falta el nombre";  
 // check that an email address was entered  
 elseif (empty ($email_address))   
-    $error = "No pudimos enviar tu mensaje. Falta el correo";  
-// check that a message was entered  
-elseif (empty ($message))  
-    $error = "No pudimos enviar tu mensaje. ¿No nos vas a decir nada?";  
+    $error = "No pudimos enviar tu mensaje. Falta el correo o teléfono";  
+
+
           
 // check if an error was found - if there was, send the user back to the form  
 if (isset($error)) {  
-    header("Location: http://www.inworkcoaching.com/contacto.php?e=".urlencode($error)); exit;  
+    header("Location: index.php?e=".urlencode($error)); exit;  
 }  
           
 // write the email content  

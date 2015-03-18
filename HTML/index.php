@@ -26,19 +26,20 @@
     
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     
-    <?php  
-    
-          // check for a successful form post  
-          if (isset($_GET['s'])) echo "<br><div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
-    
-          // check for a form error  
-          elseif (isset($_GET['e'])) echo "<br><div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
-    
-    ?>
-    
+       
     
 </head>
 <body>
+<?php  
+
+      // check for a successful form post  
+      if (isset($_GET['s'])) echo "<div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
+
+      // check for a form error  
+      elseif (isset($_GET['e'])) echo "<div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
+
+?>
+
 <nav class="navbar navbar-ct-azure navbar-transparent navbar-fixed-top" role="navigation">
     <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -141,7 +142,8 @@
                          
                          <input type="hidden" name="save" value="contact"> 
                          <!--<button class="btn btn-round btn-info btn-lg" data-toggle="morphing" data-rotation-color="azure" type="submit">Enviar</button> -->
-                         <button type="submit" >Enviar</button>
+                         
+                         <button type="submit" class="btn btn-primary">Enviar</button>
                        </div>
                      </form>
 
@@ -325,7 +327,14 @@
     		
     		<div class="container">
     			<div class="col-md-6 col-md-offset-3">
-    				<h3>Contacto</h3>
+    				<h3>Contacto y Reserva</h3>
+    				<div class="btn-footer">
+    				<a href="#" data-toggle="modal" data-target="#myModal" class="reserva-footer btn btn-primary btn-sm">
+    				     Reserva Aquí
+    				</a>
+    				</div><!--fin div-->
+    				
+    				
 	    				<div class="text">
 		    				<p>c/ Mallorca 303. 08009, Barcelona</p>
 		    				<p>+34 93 458 5216</p>

@@ -3957,7 +3957,7 @@ fieldset[disabled] .form-control {
   margin: 0 10px;
 }
 .modal-backdrop.in {
-  opacity: 0.25;
+  opacity: 0.55;
 }
 .ct-chart .ct-label {
   fill: rgba(0, 0, 0, 0.4);
@@ -5036,7 +5036,7 @@ fieldset[disabled] .form-control {
   [class*="navbar-"] .navbar-nav .open .dropdown-menu > li > a,
   [class*="navbar-"] .navbar-nav .open .dropdown-menu > li > a:hover,
   [class*="navbar-"] .navbar-nav .open .dropdown-menu > li > a:focus {
-    opacity: .7;
+    opacity: 1;
     background: transparent;
   }
   [class*="navbar-"] .navbar-nav.navbar-nav .open .dropdown-menu > li > a:active {
